@@ -1,0 +1,414 @@
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    margin: 0px;
+}
+
+.floating {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    
+}
+
+.floating-low{
+    display: flex;
+    justify-content: space-between;
+}
+
+.floating-low img{
+    height: 50px;
+    background-color: #002c53;
+}
+
+nav a{
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.encabezado1{
+    background-color: #39394d;
+    padding: 0.8rem 2rem;
+    margin: 0px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+}
+
+.encabezado1 a {
+    color: white;
+    padding: 0px 0.8rem 0px 0.8rem;
+}
+
+.encabezado2{
+    padding: 1rem 3rem;
+    background-color: #ffffff;
+    border: 0px solid gray;
+    border-bottom: 1px solid #ededed;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.encabezado2 a{
+    padding: 0px 20px;
+    color: #888888;
+}
+
+
+.encabezado2-izq{
+    display: flex;
+    align-items: center;
+}
+
+.encabezado2-izq a:hover{
+    color: #2d7bdb;
+}
+
+.encabezado2-der{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.encabezado2-der a{
+    color: #2d7bdb;
+}
+
+#button-alta{
+    padding: 6px 15px;
+    background-color: #f26d21;
+    border-radius: 8px;
+    font-size: 12pt;
+    color: white;
+    text-align: center;
+}
+
+#button-alta:hover {
+    background-color: #da621e;
+}
+
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 64rem 1fr;
+    grid-template-rows: 4rem 38.5rem 4rem;
+}
+
+.container{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    
+    display: flex;
+    justify-content: center;
+    
+    border-radius: 0.5rem;
+    filter: drop-shadow(0.0rem 0.0rem 2rem rgb(222, 222, 222));
+    color: #595959;
+}
+
+.container-left{
+    display: flex column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+
+    background-color: #dae0e9;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    text-align: center;
+    padding: 0rem 5rem 0rem 5rem;
+  
+}
+
+#ingresar{
+padding: 6rem 0rem 0rem 0rem;
+font-weight: 500;
+font-size: 2.25rem;
+}
+
+#bienvenida{
+    padding: 0rem 0rem 0rem 0rem;
+    font-weight: normal;
+    font-size: 1.25rem;
+
+}
+
+#registrar{
+    padding: 11rem 0rem 0rem 0rem;
+    font-weight: normal;
+    font-size: 1rem;
+    
+}
+
+.container-left a{
+    text-decoration: none;
+    font-weight:500;
+    color:  #595959;
+}
+
+.container-left a:hover{
+    text-decoration: underline;
+}
+
+.container-right{
+    display: flex;
+    flex-direction: column;
+    background-color:white;
+    color: #747487;
+    padding:2.5rem 5rem 1rem 5rem;
+    width: 50%;
+
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    text-align: center; 
+    font-size: 0.9rem;
+}
+
+.container-right input{
+    border-radius: .5rem;
+    border-style: solid;
+    border-color: #babacc;
+    border-width: 0.05rem;
+    height: 1.8rem;
+    width: auto;
+    margin: 0 0 1.2rem 0;
+    padding: 0.4rem 1rem;
+}
+
+.container-right .user-input:focus{
+    outline: 1px solid #0e71eb; 
+}
+
+.container-right label{
+    text-align: left;
+    margin: 0 0 0.5rem 0;
+}
+
+.container-right a{
+    text-decoration: none;
+    color: #0956b5;
+}
+
+.container-right a:hover{
+ color: #033a7d;
+ text-decoration: underline;
+}
+
+.container-right .terms{
+    text-align: justify;
+    font-size: 0.8rem;
+}
+
+.pwd{
+    display: flex;
+    width:auto;
+    justify-content: space-between;
+}
+
+#login-button{
+    border-radius: 0.5rem;
+    padding: 0.5rem 0;
+    text-decoration: none;
+    color: white;
+    background-color: #0e71eb;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+#login-button:hover{
+    background-color: #2681f2;
+}
+
+.remember-me{
+    display: flex;
+    justify-content: baseline;
+}
+
+.remember-me input{
+    padding-top: 1rem;
+    align-self: center;
+}
+
+.remember-me label{
+    padding-bottom: 0.8rem;
+    padding-left: 0.5rem;
+    align-self: center;
+    color:black;
+}
+
+.logins{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+
+}
+
+.logins img{
+    height: 1.2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid #efeff4;
+}
+
+.logins img:hover{
+    background-color: #efeff4;
+    border-color: #e0e0ea;
+}
+
+.logins a{
+    text-decoration: none;
+    color: #747487;
+}
+
+.logins a:hover{
+    color: #222230;
+    text-decoration: none;
+}
+fieldset{
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-top: 1px solid #ededf4;
+    margin: 1rem 0rem;
+}
+
+fieldset legend{
+    padding: 0 0.5rem;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #39394d;
+    color: white;
+    font-size: 0.7rem;
+    padding: 1rem 8rem 3rem 13rem;
+}
+.container-bottom1{
+    display: grid;
+    grid-template-columns: 9rem repeat(3, 10rem) 30rem;
+    grid-template-rows: 2.5rem auto;
+    justify-content: left;
+    grid-column-gap: 3.5rem;
+
+    
+    width: auto;
+    height: 16rem;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+footer h2{
+    font-size: 0.8rem;
+    font-weight: normal;
+    padding:0;
+}
+
+.acerca-de{
+    display: flex;
+    flex-direction: column;
+}
+
+.descargar{
+    display: flex;
+    flex-direction: column;
+}
+
+.ventas{
+    display: flex;
+    flex-direction: column;
+}
+
+.soporte{
+    display: flex;
+    flex-direction: column;
+}
+
+.idioma{
+    display: flex;
+    flex-direction: column;
+}
+
+.idioma > a{
+    border: 1px solid #757583;
+    width: fit-content;
+    padding: 0.1rem 0.8rem 0.5rem 0.9rem;
+}
+
+.idioma img{
+    background-color: #4c4c5e;
+    height: 2rem;
+    border-radius: 100%;
+    border-width: 0;
+}
+
+.idioma .logos {
+    padding: 0.8rem 0rem;
+}
+
+#wp:hover{
+    background-color: #028cb0;
+
+}
+
+#in:hover{
+    background-color: #1275b1;
+
+}
+
+#tw:hover{
+    background-color: #00a1f5;
+
+}
+
+#yt:hover{
+    background-color: #fc0d1b;
+
+}
+
+#fb:hover{
+    background-color: #3c5a99;
+
+}
+
+#ig:hover{
+    background-color: #002c53;
+
+}
+
+.floating-low{
+    position: sticky;
+    z-index: 1;
+    bottom: 2rem;
+    margin: 0 2rem;
+}
+
+#shield{
+    border-radius: 0.5rem;
+    background-color: #6aaae4;
+}
+#chat{
+    border-radius:100%;
+    background-color: #0e72ed;
+}
+
